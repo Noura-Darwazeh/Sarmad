@@ -6,7 +6,7 @@ export const Navbar = () => {
 };
 
 const Nav = styled.nav`
-  width: 100%;
+  max-width: 100vw;
   height: 190px;
   display: flex;
   align-items: center;

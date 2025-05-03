@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-image: url("../src/assets/backgrounds/background.png");
+  background-image: url("../src/assets/main/background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top;

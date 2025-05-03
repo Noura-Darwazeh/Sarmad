@@ -6,7 +6,7 @@ export const Footer = () => {
 };
 
 const FooterContainer = styled.div`
-  width: 100%;
+  max-width: 100vw;
   height: 550px;
   display: flex;
   align-items: center;
