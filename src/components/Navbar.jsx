@@ -5,7 +5,7 @@ import search from "../assets/navbar/Vector.png";
 import fav from "../assets/navbar/favorite.png";
 import cart from "../assets/navbar/Shopping cart.png";
 import account from "../assets/navbar/account_circle.png";
-
+import { useNavigate } from "react-router-dom";
 const HeaderContainer = styled.div`
   background: linear-gradient(
     180deg,
@@ -42,6 +42,7 @@ const Logo = styled.div`
       width: 120px;
     }
   }
+  cursor: pointer;
 `;
 
 const SearchBar = styled.div`
@@ -103,6 +104,7 @@ const Icon = styled.span`
     width: 24px;
     height: 24px;
   }
+  cursor: pointer;
 `;
 
 const NavMenu = styled.div`
@@ -115,6 +117,7 @@ const NavMenu = styled.div`
     color: ${(props) => props.theme.colors.white};
     text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -133,10 +136,12 @@ const NavMenu = styled.div`
 `;
 
 export const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <HeaderContainer>
       <TopBar>
-        <Logo>
+        <Logo onClick={() => navigate("/home")}>
           <img src={logo} alt="Sarmad Logo" />
         </Logo>
 
@@ -151,7 +156,7 @@ export const Navbar = () => {
           <Icon>
             <img src={fav} alt="المفضلة" />
           </Icon>
-          <Icon>
+          <Icon onClick={() => navigate("/cart")}>
             <img src={cart} alt="السلة" />
           </Icon>
           <Icon>
@@ -161,7 +166,7 @@ export const Navbar = () => {
       </TopBar>
 
       <NavMenu>
-        <a href="#">الصفحة الرئيسية</a>
+        <a onClick={() => navigate("/home")}>الصفحة الرئيسية</a>
         <a href="#">ثلاثي الأبعاد</a>
         <a href="#">ثنائي الأبعاد</a>
         <a href="#">الطابعات</a>
