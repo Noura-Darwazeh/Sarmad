@@ -3,9 +3,21 @@ body {
   font-family: "Almarai", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-image: url("../src/assets/backgrounds/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p {
+  margin: 0;
+  direction: rtl;
+  color: #ffffff;
+  font-weight: 300;
 }
