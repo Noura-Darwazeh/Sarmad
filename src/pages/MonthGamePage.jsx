@@ -104,14 +104,6 @@ const MoreContainer = styled.div`
   button {
     width: 307px;
     height: 54px;
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    font-family: "Almarai";
-    border: 1px solid white;
-    border-bottom: none;
     margin: auto 5vw 57px auto;
-    background: linear-gradient(180deg, #aca6ee 0%, #9790ea 100%);
   }
 `;
