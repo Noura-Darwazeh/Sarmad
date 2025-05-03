@@ -1,5 +1,6 @@
 import { MonthGamePage, HeroPage, MainLayout } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 const routerConfig = createBrowserRouter([
   {
     path: "/",
@@ -8,6 +9,11 @@ const routerConfig = createBrowserRouter([
   {
     path: "/month-game",
     element: <MainLayout PageToView={MonthGamePage} />,
+  },
+  {
+    path: "/home",
+    element: <MainLayout PageToView={HomePage} />,
+
   },
 ]);
 
