@@ -1,14 +1,14 @@
-import { MonthGamePage } from "./pages/MonthGamePage";
-import App from "./App";
+import { MonthGamePage, HeroPage } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 const routerConfig = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-    }, {
-        path: "/month-game", 
-        element: <MonthGamePage />,
-    }
+  {
+    path: "/",
+    element: <HeroPage />,
+  },
+  {
+    path: "/month-game",
+    element: <MonthGamePage />,
+  },
 ]);
 
 export default routerConfig;

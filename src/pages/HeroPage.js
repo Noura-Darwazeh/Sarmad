@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import backgroundImage from "../../assets/heroPage/Hero_Page_Saramd.png";
-import playCircle from "../../assets/heroPage/Play circle.png";
+import backgroundImage from "../assets/heroPage/Hero_Page_Saramd.png";
+import playCircle from "../assets/heroPage/Play circle.png";
 
 const HeroContainer = styled.div`
   background-size: cover;
@@ -101,7 +101,7 @@ const Line = styled.div`
   }
 `;
 
-const HeroPage = () => {
+export const HeroPage = () => {
   return (
     <HeroContainer>
       <HeroContent>
@@ -133,5 +133,3 @@ const HeroPage = () => {
     </HeroContainer>
   );
 };
-
-export default HeroPage;

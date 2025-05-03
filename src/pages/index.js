@@ -1,1 +1,2 @@
-export * from './MonthGamePage';
+export * from "./MonthGamePage";
+export * from "./HeroPage";
