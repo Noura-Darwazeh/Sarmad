@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { MonthGTitleBGImg, MoreBackgroundImg } from "../assets";
-import { Navbar, Footer } from "../components";
 export const MonthGamePage = () => {
   return (
     <Container>
-      <Navbar />
       <SubContainer>
         <Title>
           <p>وصف اللعبة:</p>
@@ -39,8 +37,6 @@ export const MonthGamePage = () => {
       <MoreContainer>
         <button>تعرف عالمزيد</button>
       </MoreContainer>
-
-      <Footer />
     </Container>
   );
 };
