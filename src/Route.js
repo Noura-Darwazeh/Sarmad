@@ -1,4 +1,10 @@
-import { MonthGamePage, HeroPage, MainLayout, CartPage } from "./pages";
+import {
+  MonthGamePage,
+  HeroPage,
+  MainLayout,
+  CartPage,
+  PaymentPage,
+} from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 const routerConfig = createBrowserRouter([
   {
@@ -12,6 +18,10 @@ const routerConfig = createBrowserRouter([
   {
     path: "/cart",
     element: <MainLayout PageToView={CartPage} />,
+  },
+  {
+    path: "/pay",
+    element: <MainLayout PageToView={PaymentPage} />,
   },
 ]);
 

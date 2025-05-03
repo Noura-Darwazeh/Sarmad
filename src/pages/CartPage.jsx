@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { CartItemCard } from "../components/CartItemCard";
 import { SyrianMaleImg, FightingGirlImg } from "../assets";
-
+import { useNavigate } from "react-router-dom";
 export const CartPage = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <Column topPadding="30px" width="25.7vw">
@@ -22,7 +23,9 @@ export const CartPage = () => {
           <p>٦٢,٠٠$ </p>
           <p style={{ fontWeight: "bold" }}>المجموع</p>
         </SummaryItemContainer>
-        <button style={{ marginTop: "12px" }}>المتابعة إلى الدفع</button>
+        <button style={{ marginTop: "12px" }} onClick={() => navigate("/pay")}>
+          المتابعة إلى الدفع
+        </button>
       </Column>
       <Column topPadding="50px" width="47vw">
         <h1 style={{ marginBottom: "35px", marginInline: "25px" }}>
