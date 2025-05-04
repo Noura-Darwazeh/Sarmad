@@ -5,13 +5,14 @@ import search from "../assets/navbar/Vector.png";
 import fav from "../assets/navbar/favorite.png";
 import cart from "../assets/navbar/Shopping cart.png";
 import account from "../assets/navbar/account_circle.png";
+import header from "../assets/navbar/Header.png";
 import { useNavigate } from "react-router-dom";
+
 const HeaderContainer = styled.div`
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+  background-image: url(${header});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 45px 91px;
   color: ${(props) => props.theme.colors.white};
   direction: rtl;
