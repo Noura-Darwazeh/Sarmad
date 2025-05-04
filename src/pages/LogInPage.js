@@ -37,7 +37,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   font-size: 14px;
 `;
 
@@ -55,7 +55,7 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-size: 14px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   text-align: right;
 `;
 
@@ -64,7 +64,7 @@ const Input = styled.input`
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid rgba(167, 139, 250, 0.3);
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.white};
   font-size: 14px;
   text-align: right;
 `;
@@ -72,11 +72,11 @@ const Input = styled.input`
 const ForgotPassword = styled.div`
   text-align: right;
   font-size: 14px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
 `;
 
 const Link = styled.a`
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   text-decoration: none;
 `;
 
@@ -90,14 +90,14 @@ const LoginButton = styled.button`
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.white};
 `;
 
 const Divider = styled.div``;
 
 const DividerSpan = styled.span`
   padding: 0 8px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   font-size: 12px;
 `;
 
@@ -111,7 +111,7 @@ const GoogleButton = styled.div`
   width: 100%;
   padding: 10px;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.white};
   color: #333333;
   font-size: 14px;
   cursor: pointer;
@@ -126,7 +126,7 @@ const FacebookButton = styled.div`
   width: 100%;
   padding: 10px;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.white};
   color: #333333;
   font-size: 14px;
   cursor: pointer;
