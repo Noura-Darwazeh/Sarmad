@@ -159,9 +159,13 @@ const GameAdSection = ({
   backgroundImage,
   desc,
   subtitleIcon,
+  onClick,
 }) => {
   return (
-    <Section style={{ backgroundImage: `url('${backgroundImage}')` }}>
+    <Section
+      style={{ backgroundImage: `url('${backgroundImage}')` }}
+      onClick={onClick}
+    >
       <Content>
         <Title>{title}</Title>
         {desc && <p>{desc}</p>}

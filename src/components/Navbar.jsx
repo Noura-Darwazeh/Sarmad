@@ -170,7 +170,7 @@ export const Navbar = () => {
         <a href="#">ثلاثي الأبعاد</a>
         <a href="#">ثنائي الأبعاد</a>
         <a href="#">الطابعات</a>
-        <a href="#">حمل شغلك</a>
+        <a onClick={() => navigate("/upload")}>حمل شغلك</a>
         <a href="#">ستايليستنا</a>
         <a href="#">من نحن</a>
       </NavMenu>

@@ -1,7 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 import { MonthGTitleBGImg, MoreBackgroundImg } from "../assets";
+
 export const MonthGamePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container>
       <SubContainer>
