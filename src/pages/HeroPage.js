@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import backgroundImage from "../assets/heroPage/Hero_Page_Saramd.png";
 import playCircle from "../assets/heroPage/Play circle.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroContainer = styled.div`
   background-size: cover;
@@ -102,6 +103,11 @@ const Line = styled.div`
 `;
 
 export const HeroPage = () => {
+  const navigate = useNavigate();    
+
+  const handleStartClick = () => {
+    navigate("/home"); 
+  };
   return (
     <HeroContainer>
       <HeroContent>
@@ -111,7 +117,7 @@ export const HeroPage = () => {
           الرسوم المتحركة.
         </Description>
 
-        <PrimaryButton>بدء الاستخدام</PrimaryButton>
+        <PrimaryButton onClick={handleStartClick}>بدء الاستخدام</PrimaryButton>
         <HeroButtons>
           <VideoLink href="#">
             <VideoText>شاهد الفيديو</VideoText>
