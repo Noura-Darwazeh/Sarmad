@@ -39,7 +39,7 @@ const Container = styled.div`
   gap: 12px;
   display: flex;
   height: 145px;
-  width: calc(100% - 54px);
+  width: calc(100% - 16px);
   margin-inline: 8px;
   margin-bottom: 24px;
   padding-inline: 19px;

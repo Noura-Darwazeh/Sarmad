@@ -96,7 +96,7 @@ const Column = styled.div`
 const SummaryItemContainer = styled.div`
   display: flex;
   padding: 20px 24px;
-  width: calc(100% - 48px);
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: ${(props) =>

@@ -6,6 +6,8 @@ import SyrianMale from "./CartPageAssets/Syria_M_2 2.png";
 import FightingGirl from "./CartPageAssets/Fighting_F_2 3.png";
 import PaymentFrame from "./PaymentPageAssets/PaymentFrame.png";
 import CartItems from "./PaymentPageAssets/CartItems.png";
+import CheckIcon from "./main/CheckIcon.png";
+import UploadIcon from "./main/UploadIcon.png";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
 export const MoreBackgroundImg = MoreBackground;
@@ -15,3 +17,5 @@ export const SyrianMaleImg = SyrianMale;
 export const FightingGirlImg = FightingGirl;
 export const PaymentFrameImg = PaymentFrame;
 export const CartItemsImg = CartItems;
+export const CheckIconImg = CheckIcon;
+export const UploadIconImg = UploadIcon;
