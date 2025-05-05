@@ -8,6 +8,8 @@ import PaymentFrame from "./PaymentPageAssets/PaymentFrame.png";
 import CartItems from "./PaymentPageAssets/CartItems.png";
 import CheckIcon from "./main/CheckIcon.png";
 import UploadIcon from "./main/UploadIcon.png";
+import FavCharacters from "./FavoritePageAssets/FavCharacters.png";
+import UploadedImageBg from "./FavoritePageAssets/UploadedImageBg.png";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
 export const MoreBackgroundImg = MoreBackground;
@@ -19,3 +21,5 @@ export const PaymentFrameImg = PaymentFrame;
 export const CartItemsImg = CartItems;
 export const CheckIconImg = CheckIcon;
 export const UploadIconImg = UploadIcon;
+export const FavCharactersImg = FavCharacters;
+export const UploadedImageBgImg = UploadedImageBg;

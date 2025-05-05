@@ -154,7 +154,7 @@ export const Navbar = () => {
         </SearchBar>
 
         <Icons>
-          <Icon>
+          <Icon onClick={() => navigate("/favorite")}>
             <img src={fav} alt="المفضلة" />
           </Icon>
           <Icon onClick={() => navigate("/cart")}>

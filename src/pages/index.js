@@ -4,3 +4,4 @@ export * from "./MainLayout";
 export * from "./CartPage";
 export * from "./PaymentPage";
 export * from "./UploadPage";
+export * from "./FavPage";

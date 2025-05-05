@@ -13,7 +13,7 @@ export const MadeByUs = () => {
 
 const Container = styled.div`
   gap: 7px;
-  padding: 34px 0 14px 0;
+  padding: 19px 0 14px 0;
   display: flex;
   justify-content: center;
   align-items: center;
