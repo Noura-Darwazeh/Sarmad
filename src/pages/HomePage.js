@@ -9,6 +9,7 @@ import hero3 from "../assets/homePage/hero3.png";
 import asol2 from "../assets/homePage/asol2.png";
 import hero4 from "../assets/homePage/hero4.png";
 import check from "../assets/homePage/Check circle.png";
+import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
   direction: rtl;
@@ -44,6 +45,7 @@ const FullWidthImage = styled.img`
 `;
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <PageContainer>
       <GameAdSection
@@ -62,6 +64,7 @@ const HomePage = () => {
         desc="تعرف على أفضل الألعاب العربية في الوطن العربي "
         buttonText="اضغط هنا"
         backgroundImage={hero2}
+        onClick={() => navigate("/month-game")}
       />
       <FullWidthImage src={asol} alt="asol" />
 

@@ -97,7 +97,6 @@ const DetailsContainer = styled.div`
   img {
     width: 100%;
     margin-top: 8px;
-    padding-inline: 70px;
   }
   button {
     width: 308px;
@@ -120,7 +119,7 @@ const FormContainer = styled.div`
   }
   input {
     text-align: right;
-    width: calc(100% - 34px);
+    width: 100%;
     height: 40px;
     padding: 0 16px;
     border-radius: 8px;
@@ -146,7 +145,7 @@ const FormContainer = styled.div`
 `;
 
 const SummaryContainer = styled.div`
-  width: calc(100% - 54px);
+  width: 100%;
   display: flex;
   margin-top: 52px;
   padding: 21px 27px 0 27px;
@@ -175,7 +174,7 @@ const SummaryContainer = styled.div`
     gap: 10px;
     padding: 7px;
     display: flex;
-    width: calc(100% - 14px);
+    width: 100%;
     border-top: 5px solid rgb(255, 255, 255);
     align-items: center;
   }

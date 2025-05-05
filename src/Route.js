@@ -4,6 +4,8 @@ import {
   MainLayout,
   CartPage,
   PaymentPage,
+  UploadPage,
+  FavPage,
 } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
@@ -21,7 +23,6 @@ const routerConfig = createBrowserRouter([
   {
     path: "/home",
     element: <MainLayout PageToView={HomePage} />,
-
   },
   {
     path: "/cart",
@@ -32,8 +33,16 @@ const routerConfig = createBrowserRouter([
     element: <MainLayout PageToView={PaymentPage} />,
   },
   {
+    path: "/upload",
+    element: <MainLayout PageToView={UploadPage} />,
+  },
+  {
     path: "/log-in",
-    element: <LogInPage/>,
+    element: <LogInPage />,
+  },
+  {
+    path: "/favorite",
+    element: <MainLayout PageToView={FavPage} />,
   },
 ]);
 
