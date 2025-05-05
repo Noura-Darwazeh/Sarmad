@@ -174,7 +174,7 @@ export const Footer = () => {
         </SocialIcon>
       </SocialLinks>
 
-      <Copyright>© جميع الحقوق لتطبيق (سرمد)</Copyright>
+      <Copyright>© جميع الحقوق محفوظة لتطبيق (سرمد)</Copyright>
     </FooterContainer>
   );
 };
