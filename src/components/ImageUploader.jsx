@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Upload } from "antd";
 import { UploadIconImg } from "../assets";
+import { GlassDiv } from "../components";
 const { Dragger } = Upload;
 
 export const ImageUploader = ({
@@ -53,9 +54,21 @@ export const ImageUploader = ({
           padding: 0,
         }}
       >
-        <UploadBg>
-          <img src={UploadIconImg} alt="upload" />
-        </UploadBg>
+        <GlassDiv
+          width="100%"
+          height="600px"
+          style={{
+            marginBottom: "60px",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={UploadIconImg}
+            alt="upload"
+            style={{ width: "113px", height: "113px" }}
+          />
+        </GlassDiv>
       </FullWidthDragger>
       {uploadedImage && (
         <ImagePreview>
@@ -84,26 +97,6 @@ const ImagePreview = styled.div`
   }
   margin-bottom: 30px;
   margin-top: -50px;
-`;
-
-const UploadBg = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-  border-radius: 20px;
-  margin-bottom: 60px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
-  img {
-    width: 113px;
-    height: 113px;
-  }
 `;
 
 const FullWidthDragger = styled(Dragger)`

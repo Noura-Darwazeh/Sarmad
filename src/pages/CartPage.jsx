@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { CartItemCard } from "../components/CartItemCard";
+import { CartItemCard, GlassDiv } from "../components";
 import { SyrianMaleImg, FightingGirlImg } from "../assets";
 import { useNavigate } from "react-router-dom";
 export const CartPage = () => {
   const navigate = useNavigate();
   return (
     <Container>
-      <Column topPadding="30px" width="25.7vw">
+      <GlassDiv topPadding="30px" width="25.7vw" height="827px">
         <h2 style={{ marginBottom: "32px", marginInline: "24px" }}>
           ملخص الطلب
         </h2>
@@ -26,8 +26,8 @@ export const CartPage = () => {
         <button style={{ marginTop: "12px" }} onClick={() => navigate("/pay")}>
           المتابعة إلى الدفع
         </button>
-      </Column>
-      <Column topPadding="50px" width="47vw">
+      </GlassDiv>
+      <GlassDiv topPadding="50px" width="47vw" height="827px">
         <h1 style={{ marginBottom: "35px", marginInline: "25px" }}>
           سلة التسوق
         </h1>
@@ -43,7 +43,7 @@ export const CartPage = () => {
           width="auto"
           height="80px"
         />
-      </Column>
+      </GlassDiv>
     </Container>
   );
 };
@@ -72,27 +72,7 @@ const Container = styled.div`
     }
   }
 `;
-const Column = styled.div`
-  width: ${(props) => props.width};
-  padding-top: ${(props) => props.topPadding};
-  height: calc(827px - ${(props) => props.topPadding}) !important;
-  align-items: flex-end;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
-  button {
-    height: 64px;
-    width: 20.6vw;
-    border-radius: 10px;
-    margin-inline: auto;
-  }
-`;
+
 const SummaryItemContainer = styled.div`
   display: flex;
   padding: 20px 24px;

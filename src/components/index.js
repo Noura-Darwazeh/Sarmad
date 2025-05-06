@@ -4,3 +4,4 @@ export * from "./CartItemCard";
 export * from "./MadeByUs";
 export * from "./ImageUploader";
 export * from "./FavGrid";
+export * from "./StyledComponents";
