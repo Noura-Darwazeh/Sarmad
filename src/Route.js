@@ -6,6 +6,7 @@ import {
   PaymentPage,
   UploadPage,
   FavPage,
+  ViewPage,
 } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
@@ -43,6 +44,10 @@ const routerConfig = createBrowserRouter([
   {
     path: "/favorite",
     element: <MainLayout PageToView={FavPage} />,
+  },
+  {
+    path: "/view",
+    element: <MainLayout PageToView={ViewPage} />,
   },
 ]);
 
