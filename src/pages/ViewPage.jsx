@@ -4,13 +4,14 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 import { FavIcon, ImageIcon, RatingIcon } from "../assets";
 import { AllData } from "../utils/ViewData";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export const ViewPage = () => {
-  const { id } = useParams();
+  const { search } = useLocation();
+  const id = new URLSearchParams(search).get("id");
   const [data, setData] = useState();
   useEffect(() => {
-    const foundData = AllData.find((item) => item.id === id);
+    const foundData = AllData[id];
     if (foundData) {
       setData(foundData);
     } else {
@@ -46,11 +47,24 @@ export const ViewPage = () => {
               style={{ width: "39px", height: "36px" }}
             />
           </RatingContainer>
-          <h6>{data?.details}</h6>
+          <h6 style={{ fontSize: "36px" }}>{data?.details}</h6>
           <p>{data?.description}</p>
           <ButtonsContainer>
             <img src={FavIcon} style={{ width: "52px", height: "46px" }} />
-            <button style={{ width: "148px", height: "51px" }}>تنزيل</button>
+            <button
+              style={{ width: "148px", height: "51px" }}
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = data?.mainImage;
+                const extension = data?.mainImage.split(".").pop();
+                link.download = (data?.title || "image") + "." + extension;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              تنزيل
+            </button>
           </ButtonsContainer>
         </Details>
         <GlassDiv
@@ -58,14 +72,16 @@ export const ViewPage = () => {
           height="938px"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <img
-            src={data?.mainImage}
-            alt="main"
-            style={{
-              width: "700px",
-              height: "900px",
-            }}
-          />
+          {data?.mainImage && (
+            <img
+              src={data?.mainImage}
+              alt="main"
+              style={{
+                maxWidth: "741px",
+                maxHeight: "893px",
+              }}
+            />
+          )}
         </GlassDiv>
       </ElementContainer>
       <ImagesContainer>
@@ -111,9 +127,9 @@ const Details = styled.div`
     font-size: 22px;
   }
   p {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
-    width: 327px;
+    width: 500px;
     margin-top: 25px;
     margin-bottom: 60px;
   }
