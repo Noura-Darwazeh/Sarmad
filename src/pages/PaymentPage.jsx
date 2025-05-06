@@ -103,6 +103,24 @@ const DetailsContainer = styled.div`
     height: 64px;
     margin-top: -48px;
   }
+  @media (max-width: 900px) {
+    width: 90%;
+    padding: 40px 20px 20px 20px;
+    margin-bottom: 0;
+    h1 {
+      font-size: 40px;
+      width: 100%;
+      border-bottom: none;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    button {
+      width: 40%;
+      height: 50px;
+      margin-top: -30px;
+    }
+  }
 `;
 
 const FormContainer = styled.div`
@@ -141,6 +159,17 @@ const FormContainer = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 75px;
+    p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
   }
 `;
 

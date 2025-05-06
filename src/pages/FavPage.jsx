@@ -25,6 +25,17 @@ const Container = styled.div`
     padding: 30px 173px;
     font-size: 60px;
   }
+  @media (max-width: 1200px) {
+    h2 {
+      padding: 30px 20px;
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 1000px) {
+    h2 {
+      padding: 40px;
+    }
+  }
 `;
 
 const GridContainer = styled.div`
@@ -33,4 +44,13 @@ const GridContainer = styled.div`
   gap: 48px;
   padding: 0 178px 120px 0;
   justify-content: flex-end;
+  @media (max-width: 1200px) {
+    padding: 0 20px 120px 0;
+    gap: 24px;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 80px;
+    padding: 0 40px 120px 0;
+  }
 `;

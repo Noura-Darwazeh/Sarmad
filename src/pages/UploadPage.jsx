@@ -25,7 +25,7 @@ export const UploadPage = () => {
         />
         <button onClick={handleImageUpload}>تحميل</button>
         <h1>اترك تعليق:</h1>
-        <UploadBg width="442px" height="208px"></UploadBg>
+        <UploadBg width="442px" height="208px" className="comment" />
         <button>الموافقة</button>
       </UploadingContainer>
     </Container>
@@ -36,6 +36,11 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    .comment {
+      width: 300px;
+    }
+  }
 `;
 
 const UploadingContainer = styled.div`

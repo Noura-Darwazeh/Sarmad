@@ -70,18 +70,10 @@ export const ViewPage = () => {
         <GlassDiv
           width="765px"
           height="938px"
+          className="glass"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          {data?.mainImage && (
-            <img
-              src={data?.mainImage}
-              alt="main"
-              style={{
-                maxWidth: "741px",
-                maxHeight: "893px",
-              }}
-            />
-          )}
+          {data?.mainImage && <MainImg src={data?.mainImage} alt="main" />}
         </GlassDiv>
       </ElementContainer>
       <ImagesContainer>
@@ -112,6 +104,35 @@ const ElementContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 51px 91px 0 63px;
+  @media (max-width: 1400px) {
+    padding: 40px 55px 0 55px;
+    .glass {
+      width: 650px;
+      height: 800px;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 20px 20px 0 20px;
+    .glass {
+      width: 500px;
+      height: 600px;
+    }
+  }
+  @media (max-width: 950px) {
+    padding: 20px 10px 0 10px;
+    .glass {
+      width: 400px;
+      height: 500px;
+    }
+  }
+  @media (max-width: 750px) {
+    flex-direction: column;
+    direction: column-reverse;
+    .glass {
+      width: 90%;
+      height: 600px;
+    }
+  }
 `;
 
 const Details = styled.div`
@@ -132,6 +153,33 @@ const Details = styled.div`
     width: 500px;
     margin-top: 25px;
     margin-bottom: 60px;
+  }
+  @media (max-width: 1400px) {
+    height: 800px;
+    padding: 100px 40px 200px 0;
+  }
+  @media (max-width: 1200px) {
+    height: 600px;
+  }
+  @media (max-width: 950px) {
+    height: 500px;
+    h1 {
+      font-size: 28px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 18px;
+      width: 300px;
+
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+    padding: 40px;
   }
 `;
 
@@ -160,6 +208,21 @@ const ImagesContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 63px 91px 0 91px;
+  @media (max-width: 1400px) {
+    padding: 40px 55px 0 55px;
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 20px 0 20px;
+  }
+  @media (max-width: 950px) {
+    padding: 20px 10px 0 10px;
+  }
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+  }
 `;
 
 const Image = styled.div`
@@ -170,4 +233,41 @@ const Image = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media (max-width: 1400px) {
+    width: 350px;
+    height: 373px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 300px;
+    max-height: 319px;
+  }
+  @media (max-width: 950px) {
+    max-width: 250px;
+    max-height: 265px;
+  }
+  @media (max-width: 750px) {
+    width: 300px;
+    height: 319px;
+  }
+`;
+
+const MainImg = styled.img`
+  max-width: 741px;
+  max-height: 893px;
+  @media (max-width: 1400px) {
+    max-width: 600px;
+    max-height: 700px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  @media (max-width: 950px) {
+    max-width: 300px;
+    max-height: 400px;
+  }
+  @media (max-width: 750px) {
+    max-width: 400px;
+    max-height: 550px;
+  }
 `;
