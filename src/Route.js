@@ -7,6 +7,7 @@ import {
   UploadPage,
   FavPage,
   ViewPage,
+  AboutUsPage,
 } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
@@ -48,6 +49,10 @@ const routerConfig = createBrowserRouter([
   {
     path: "/view",
     element: <MainLayout PageToView={ViewPage} />,
+  },
+  {
+    path: "/about",
+    element: <MainLayout PageToView={AboutUsPage} />,
   },
 ]);
 

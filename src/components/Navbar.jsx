@@ -173,7 +173,7 @@ export const Navbar = () => {
         <a href="#">الطابعات</a>
         <a onClick={() => navigate("/upload")}>حمل شغلك</a>
         <a href="#">ستايليستنا</a>
-        <a href="#">من نحن</a>
+        <a onClick={() => navigate("/about")}>من نحن</a>
       </NavMenu>
     </HeaderContainer>
   );

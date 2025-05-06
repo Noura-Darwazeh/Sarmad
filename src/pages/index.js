@@ -6,3 +6,4 @@ export * from "./PaymentPage";
 export * from "./UploadPage";
 export * from "./FavPage";
 export * from "./ViewPage";
+export * from "./AboutUsPage";

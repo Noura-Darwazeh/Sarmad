@@ -37,6 +37,13 @@ import BedouinManMain from "./ViewPageAssets/BedouinMan/BedouinManMainImage.png"
 import BedouinMan1 from "./ViewPageAssets/BedouinMan/BedouinMan1.png";
 import BedouinMan2 from "./ViewPageAssets/BedouinMan/BedouinMan2.png";
 import BedouinMan3 from "./ViewPageAssets/BedouinMan/BedouinMan3.png";
+import LeftCorner from "./AboutUsAssets/LeftCornerTitle.png";
+import WhyBg from "./AboutUsAssets/WhyBg.png";
+import WhyItem from "./AboutUsAssets/WhyItemBG.png";
+import Group from "./AboutUsAssets/Group.png";
+import Leen from "./AboutUsAssets/Leen.png";
+import Rama from "./AboutUsAssets/Rama.png";
+import Leema from "./AboutUsAssets/Leema.png";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
 export const MoreBackgroundImg = MoreBackground;
@@ -77,3 +84,10 @@ export const BedouinManMainImg = BedouinManMain;
 export const BedouinMan1Img = BedouinMan1;
 export const BedouinMan2Img = BedouinMan2;
 export const BedouinMan3Img = BedouinMan3;
+export const LeftCornerTitle = LeftCorner;
+export const WhyBgImg = WhyBg;
+export const WhyItemBG = WhyItem;
+export const GroupImg = Group;
+export const LeenImg = Leen;
+export const RamaImg = Rama;
+export const LeemaImg = Leema;
