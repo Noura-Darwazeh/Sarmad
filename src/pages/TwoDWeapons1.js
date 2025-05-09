@@ -77,7 +77,7 @@ export function TwoDWeapons1() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
-              onClick={() => navigate("/view?id=2")}
+              // onClick={() => navigate("/view?id=2")}
             />
 
             <AssetsCard
@@ -101,6 +101,8 @@ export function TwoDWeapons1() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
+              onClick={() => navigate("/view?id=4")}
+
             />
             <AssetsCard
               innerImage={combTheGround}
