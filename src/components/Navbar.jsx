@@ -168,8 +168,8 @@ export const Navbar = () => {
 
       <NavMenu>
         <a onClick={() => navigate("/home")}>الصفحة الرئيسية</a>
-        <a href="#">ثلاثي الأبعاد</a>
-        <a href="#">ثنائي الأبعاد</a>
+        <a onClick={() => navigate("/three-d-characters1")}>ثلاثي الأبعاد</a>
+        <a onClick={() => navigate("/two-d-characters1")}>ثنائي الأبعاد</a>
         <a href="#">الطابعات</a>
         <a onClick={() => navigate("/upload")}>حمل شغلك</a>
         <a href="#">ستايليستنا</a>

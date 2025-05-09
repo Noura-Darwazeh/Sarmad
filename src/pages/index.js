@@ -7,3 +7,7 @@ export * from "./UploadPage";
 export * from "./FavPage";
 export * from "./ViewPage";
 export * from "./AboutUsPage";
+export * from "./ThreeDCharacters1";
+export * from "./ThreeDCharacters2";
+export * from "./TwoDWeapons1";
+export * from "./TwoDWeapons2";

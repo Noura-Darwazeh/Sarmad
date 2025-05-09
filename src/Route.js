@@ -8,16 +8,19 @@ import {
   FavPage,
   ViewPage,
   AboutUsPage,
-  
+  ThreeDCharacters1,
+  ThreeDCharacters2,
+  TwoDWeapons1,
+  TwoDWeapons2,
 } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LogInPage from "./pages/LogInPage";
 import ThreeDWeapons from "./pages/ThreeDWeapons";
-import ThreeDEnvironments from "./pages/ThreeDEnvironments"
-import TwoDEnvironments from "./pages/TwoDEnvironments"
-import TwoDCharacters1 from "./pages/TwoDCharacters1"
-import TwoDCharacters2 from "./pages/TwoDCharacters2"
+import ThreeDEnvironments from "./pages/ThreeDEnvironments";
+import TwoDEnvironments from "./pages/TwoDEnvironments";
+import TwoDCharacters1 from "./pages/TwoDCharacters1";
+import TwoDCharacters2 from "./pages/TwoDCharacters2";
 const routerConfig = createBrowserRouter([
   {
     path: "/",
@@ -66,6 +69,22 @@ const routerConfig = createBrowserRouter([
   {
     path: "/three-d-environments",
     element: <MainLayout PageToView={ThreeDEnvironments} />,
+  },
+  {
+    path: "/three-d-characters1",
+    element: <MainLayout PageToView={ThreeDCharacters1} />,
+  },
+  {
+    path: "/three-d-characters2",
+    element: <MainLayout PageToView={ThreeDCharacters2} />,
+  },
+  {
+    path: "/two-d-weapons1",
+    element: <MainLayout PageToView={TwoDWeapons1} />,
+  },
+  {
+    path: "/two-d-weapons2",
+    element: <MainLayout PageToView={TwoDWeapons2} />,
   },
   {
     path: "/two-d-environments",

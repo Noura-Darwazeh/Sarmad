@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import card from '../assets/Card/card.png'; // يمكن استبداله ببروب أيضاً إذا رغبت
+import React from "react";
+import styled from "styled-components";
+import card from "../assets/Card/card.png"; // يمكن استبداله ببروب أيضاً إذا رغبت
 
 const CardWrapper = styled.div`
   width: 16rem;
@@ -18,7 +18,7 @@ const CardInner = styled.div`
   width: 100%;
   height: 70%;
   border-radius: 0.5rem;
-  background-image: url(${props => props.bg});
+  background-image: url(${(props) => props.bg});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,7 +37,7 @@ const CardText = styled.div`
 
 const Title = styled.h2`
   font-size: 1.5rem;
-  font-weight:400;
+  font-weight: 400;
   margin: 7px 0px;
   color: #ffffff;
 `;
@@ -67,7 +67,14 @@ const ViewButton = styled.button`
   transition: background-color 0.3s ease;
 `;
 
-export default function Card({ innerImage, title, price, software, buttonText }) {
+export default function Card({
+  innerImage,
+  title,
+  price,
+  software,
+  buttonText,
+  onClick,
+}) {
   return (
     <CardWrapper>
       <CardInner bg={innerImage} />
@@ -78,7 +85,7 @@ export default function Card({ innerImage, title, price, software, buttonText })
         <Software>{software}</Software>
       </CardText>
 
-      <ViewButton>{buttonText}</ViewButton>
+      <ViewButton onClick={onClick}>{buttonText}</ViewButton>
     </CardWrapper>
   );
 }

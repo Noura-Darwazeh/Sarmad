@@ -85,6 +85,10 @@ const Container = styled.div`
   border: 1px solid rgba(66, 28, 73, 0.2);
   img {
     padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 4px solid #553f78;
   }
   .image1 {
     border-radius: 20px 0px 0px 0px;
@@ -94,10 +98,6 @@ const Container = styled.div`
     height: 224px;
     img {
       border-radius: 20px 0px 0px 0px;
-      width: 100%;
-      height: 100%;
-      object-fit: fit;
-      border: 4px solid #553f78;
     }
   }
   .image2 {
@@ -108,10 +108,6 @@ const Container = styled.div`
     height: 224px;
     img {
       border-radius: 0px 20px 0px 0px;
-      width: 100%;
-      height: 100%;
-      object-fit: fit;
-      border: 4px solid #553f78;
     }
   }
   .image3 {
@@ -122,10 +118,6 @@ const Container = styled.div`
     height: 224px;
     img {
       border-radius: 0px 0px 0px 20px;
-      width: 100%;
-      height: 100%;
-      object-fit: fit;
-      border: 4px solid #553f78;
     }
   }
   .image4 {
@@ -136,10 +128,6 @@ const Container = styled.div`
     height: 224px;
     img {
       border-radius: 0px 0px 20px 0px;
-      width: 100%;
-      height: 100%;
-      object-fit: fit;
-      border: 4px solid #553f78;
     }
   }
 `;

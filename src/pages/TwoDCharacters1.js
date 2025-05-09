@@ -11,6 +11,7 @@ import ironMachine from "../assets/threeDWeapons/ironMachine.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
 import Pagination from "../components/Pagination "
+import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
   padding-right: 75px;
@@ -58,6 +59,7 @@ const Cards = styled.div`
 `;
 
 function TwoDCharacters1() {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <MadeByUs />

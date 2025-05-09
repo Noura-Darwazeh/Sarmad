@@ -10,6 +10,7 @@ import JordanianEnvironment from "../assets/threeDEnvironment/JordanianEnvironme
 import WarEnvironment from "../assets/threeDEnvironment/WarEnvironment.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
   padding-right: 75px;
@@ -57,6 +58,7 @@ const Cards = styled.div`
 `;
 
 function ThreeDEnvironments() {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <MadeByUs />
@@ -73,6 +75,7 @@ function ThreeDEnvironments() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
+              onClick={() => navigate("/view?id=2")}
             />
 
             <AssetsCard
