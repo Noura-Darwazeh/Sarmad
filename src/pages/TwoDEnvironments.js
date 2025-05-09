@@ -75,7 +75,6 @@ function TwoDEnvironments() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
-              onClick={() => navigate("/view?id=3")}
             />
 
             <WeaponCard
@@ -106,6 +105,8 @@ function TwoDEnvironments() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
+              onClick={() => navigate("/view?id=3")}
+
             />
           </Cards>
         </ContainerCardsSidebar>
