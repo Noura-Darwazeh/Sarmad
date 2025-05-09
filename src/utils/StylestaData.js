@@ -25,6 +25,31 @@ import {
   ThreeDFaceModel,
   ThreeDBodyModel,
   ThreeDClothesModel,
+  FemaleFace1Img,
+  FemaleFace2Img,
+  FemaleFace3Img,
+  FemaleFace4Img,
+  FemaleFace5Img,
+  FemaleFace6Img,
+  FemaleFace7Img,
+  FemaleFace8Img,
+  FemaleFace9Img,
+  FemaleHair1Img,
+  FemaleHair2Img,
+  FemaleHair3Img,
+  FemaleHair4Img,
+  FemaleHair5Img,
+  FemaleHair6Img,
+  FemaleHair7Img,
+  FemaleHair8Img,
+  FemaleShoes1Img,
+  FemaleShoes2Img,
+  FemaleShoes3Img,
+  FemaleShoes4Img,
+  FemaleShoes5Img,
+  FemaleShoes6Img,
+  FemaleShoes7Img,
+  FemaleShoes8Img,
 } from "../assets";
 
 export const FemaleBody = {
@@ -45,13 +70,32 @@ export const FemaleBody = {
 
 export const FemaleFace = {
   title: "الوجه",
-  images: [],
+  images: [
+    FemaleFace1Img,
+    FemaleFace2Img,
+    FemaleFace3Img,
+    FemaleFace4Img,
+    FemaleFace5Img,
+    FemaleFace6Img,
+    FemaleFace7Img,
+    FemaleFace8Img,
+    FemaleFace9Img,
+  ],
   model: ThreeDFaceModel,
 };
 
 export const FemaleHair = {
   title: "الشعر",
-  images: [],
+  images: [
+    FemaleHair1Img,
+    FemaleHair2Img,
+    FemaleHair3Img,
+    FemaleHair4Img,
+    FemaleHair5Img,
+    FemaleHair6Img,
+    FemaleHair7Img,
+    FemaleHair8Img,
+  ],
 };
 
 export const FemaleClothes = {
@@ -78,7 +122,16 @@ export const FemaleClothes = {
 
 export const FemaleShoes = {
   title: "الأحذية",
-  images: [],
+  images: [
+    FemaleShoes1Img,
+    FemaleShoes2Img,
+    FemaleShoes3Img,
+    FemaleShoes4Img,
+    FemaleShoes5Img,
+    FemaleShoes6Img,
+    FemaleShoes7Img,
+    FemaleShoes8Img,
+  ],
 };
 
 export const AllFemaleData = [
