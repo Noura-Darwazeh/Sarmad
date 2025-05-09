@@ -38,7 +38,7 @@ const Pagination = ({ setPage }) => {
           active={currentPage === i + 1}
           onClick={() => {
             setCurrentPage(i + 1);
-            setPage(i + 1);
+            setPage && setPage(i + 1);
           }}
         >
           {i + 1}

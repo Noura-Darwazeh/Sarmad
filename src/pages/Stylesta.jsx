@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { MadeByUs, StylestaCard, StylestaSidebar } from "../components";
 import { AllFemaleData, AllMaleData } from "../utils/StylestaData";
-import WeaponCard from "../components/Card";
 import Imagee from "../components/AssetsGalleryImage";
 import Pagination from "../components/Pagination ";
+import Cover from "../assets/Stylesta/stylestaCover.png";
 
 export const Stylesta = () => {
   const [selectedSection, setSelectedSection] = useState(0);
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
+  useEffect(() => {
+    setPage(1);
+  }, [selectedSection]);
   useEffect(() => {
     if (selectedSection < 10) {
       if (page === 1) {
@@ -25,10 +28,11 @@ export const Stylesta = () => {
       }
     }
   }, [selectedSection, page]);
+
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={Cover} />
       <PageContainer>
         <h2>ستايليستا</h2>
         <ContainerCardsSidebar>
