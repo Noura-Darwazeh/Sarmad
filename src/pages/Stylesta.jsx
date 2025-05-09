@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { MadeByUs, StylestaSidebar } from "../components";
+import { MadeByUs, StylestaCard, StylestaSidebar } from "../components";
 import { AllFemaleData, AllMaleData } from "../utils/StylestaData";
 import WeaponCard from "../components/Card";
 import Imagee from "../components/AssetsGalleryImage";
+import Pagination from "../components/Pagination ";
 
 export const Stylesta = () => {
   const [selectedSection, setSelectedSection] = useState(0);
-
+  const [images, setImages] = useState([]);
+  const [page, setPage] = useState(1);
+  useEffect(() => {
+    if (selectedSection < 10) {
+      if (page === 1) {
+        setImages(AllFemaleData[selectedSection].images.slice(0, 9));
+      } else {
+        setImages(AllFemaleData[selectedSection].images.slice(9, 18));
+      }
+    } else {
+      if (page === 1) {
+        setImages(AllMaleData[selectedSection - 10].images.slice(0, 9));
+      } else {
+        setImages(AllMaleData[selectedSection - 10].images.slice(9, 18));
+      }
+    }
+  }, [selectedSection, page]);
   return (
     <div className="container">
       <MadeByUs />
@@ -19,55 +36,38 @@ export const Stylesta = () => {
             selectedSection={selectedSection}
             setSelectedSection={setSelectedSection}
           />
-          <Cards>
-            {selectedSection < 10
-              ? AllFemaleData[selectedSection].images.map((item, index) => (
-                  <WeaponCard
-                    key={index}
-                    innerImage={item}
-                    title="مجاناً"
-                    software="Blender"
-                    buttonText="تنزيل"
-                    onClick={() => {
-                      const link = document.createElement("a");
-                      link.href = item;
-                      const extension = item.split(".").pop();
-                      link.download =
-                        "أنثوي " +
-                        AllFemaleData[selectedSection].title +
-                        (index + 1) +
-                        "." +
-                        extension;
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  />
-                ))
-              : AllMaleData[selectedSection - 10].images.map((item, index) => (
-                  <WeaponCard
-                    key={index}
-                    innerImage={item}
-                    title="مجاناً"
-                    software="Blender"
-                    buttonText="تنزيل"
-                    onClick={() => {
-                      const link = document.createElement("a");
-                      link.href = item;
-                      const extension = item.split(".").pop();
-                      link.download =
-                        "ذكوري " +
-                        AllMaleData[selectedSection].title +
-                        (index + 1) +
-                        "." +
-                        extension;
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                  />
-                ))}
-          </Cards>
+          <ShowcaseContainer>
+            <Cards>
+              {images.map(
+                (item, index) =>
+                  item && (
+                    <StylestaCard
+                      key={index}
+                      image={item}
+                      imageToDownload={
+                        index === 0
+                          ? (selectedSection < 10
+                              ? AllFemaleData[selectedSection]
+                              : AllMaleData[selectedSection - 10]
+                            ).model
+                          : item
+                      }
+                      name={
+                        (selectedSection < 10
+                          ? AllFemaleData[selectedSection]
+                          : AllMaleData[selectedSection - 10]
+                        ).title.slice(2) +
+                        (selectedSection < 10 ? " أنثوي" : " ذكوري") +
+                        (index + 1)
+                      }
+                    />
+                  )
+              )}
+            </Cards>
+            {AllFemaleData[selectedSection]?.images.length > 9 && (
+              <Pagination setPage={setPage} />
+            )}
+          </ShowcaseContainer>
         </ContainerCardsSidebar>
       </PageContainer>
     </div>
@@ -117,4 +117,11 @@ const Cards = styled.div`
     grid-template-columns: 1fr;
     gap: 20px;
   }
+`;
+
+const ShowcaseContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 `;

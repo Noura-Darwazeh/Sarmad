@@ -8,3 +8,4 @@ export * from "./StyledComponents";
 export * from "./ThreeDViewer";
 
 export * from "./stylesta/StylestaSidebar";
+export * from "./stylesta/StylestaCard";

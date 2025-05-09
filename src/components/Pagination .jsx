@@ -26,7 +26,7 @@ const PageButton = styled.button`
   `}
 `;
 
-const Pagination = () => {
+const Pagination = ({ setPage }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 2;
 
@@ -36,7 +36,10 @@ const Pagination = () => {
         <PageButton
           key={i + 1}
           active={currentPage === i + 1}
-          onClick={() => setCurrentPage(i + 1)}
+          onClick={() => {
+            setCurrentPage(i + 1);
+            setPage(i + 1);
+          }}
         >
           {i + 1}
         </PageButton>

@@ -8,6 +8,23 @@ import {
   FemaleBody7Img,
   FemaleBody8Img,
   FemaleBody9Img,
+  FemaleClothes1Img,
+  FemaleClothes2Img,
+  FemaleClothes3Img,
+  FemaleClothes4Img,
+  FemaleClothes5Img,
+  FemaleClothes6Img,
+  FemaleClothes7Img,
+  FemaleClothes8Img,
+  FemaleClothes9Img,
+  FemaleClothes10Img,
+  FemaleClothes11Img,
+  FemaleClothes12Img,
+  FemaleClothes13Img,
+  FemaleClothes14Img,
+  ThreeDFaceModel,
+  ThreeDBodyModel,
+  ThreeDClothesModel,
 } from "../assets";
 
 export const FemaleBody = {
@@ -23,11 +40,13 @@ export const FemaleBody = {
     FemaleBody8Img,
     FemaleBody9Img,
   ],
+  model: ThreeDBodyModel,
 };
 
 export const FemaleFace = {
   title: "الوجه",
   images: [],
+  model: ThreeDFaceModel,
 };
 
 export const FemaleHair = {
@@ -37,7 +56,24 @@ export const FemaleHair = {
 
 export const FemaleClothes = {
   title: "الملابس",
-  images: [],
+  images: [
+    FemaleClothes1Img,
+    FemaleClothes2Img,
+    FemaleClothes3Img,
+    FemaleClothes4Img,
+    FemaleClothes5Img,
+    FemaleClothes6Img,
+    FemaleClothes7Img,
+    FemaleClothes8Img,
+    null,
+    FemaleClothes9Img,
+    FemaleClothes10Img,
+    FemaleClothes11Img,
+    FemaleClothes12Img,
+    FemaleClothes13Img,
+    FemaleClothes14Img,
+  ],
+  model: ThreeDClothesModel,
 };
 
 export const FemaleShoes = {
