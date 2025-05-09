@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import WeaponCard from "../components/Card";
 import Sidebar from "../components/AssetsGallerySidebar";
 import RamadanEnvironment from "../assets/twoDEnvironment/RamadanEnvironment.png";
@@ -106,7 +105,6 @@ function TwoDEnvironments() {
               software="Maya"
               buttonText="عرض"
               onClick={() => navigate("/view?id=3")}
-
             />
           </Cards>
         </ContainerCardsSidebar>
