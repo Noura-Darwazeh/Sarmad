@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 import WeaponCard from "../components/Card";
 import Sidebar from "../components/AssetsGallerySidebar";
-import RamadanEnvironment from "../assets/twoDEnvironment/RamadanEnvironment.png";
-import PalestinianEnvironment from "../assets/twoDEnvironment/PalestinianEnvironment.png";
-import YemeniEnvironment from "../assets/twoDEnvironment/YemeniEnvironment.png";
-import MoroccanEnvironment from "../assets/twoDEnvironment/MoroccanEnvironment.png";
-import BedouinEnvironment from "../assets/twoDEnvironment/BedouinEnvironment.png";
+import MoroccanMan from "../assets/twoDCharacters/MoroccanMan.png";
+import MoroccanGirl from "../assets/twoDCharacters/MoroccanGirl.png";
+import YemeniMan from "../assets/twoDCharacters/YemeniMan.png";
+import YemeniGirl from "../assets/twoDCharacters/YemeniGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import Pagination from "../components/Pagination ";
 
 const PageContainer = styled.div`
   padding-right: 75px;
@@ -63,43 +63,36 @@ function TwoDCharacters2() {
       <Imagee />
 
       <PageContainer>
-        <h2>أسلحة ثنائية الأبعاد</h2>
+        <h2>شخصيات ثنائية الأبعاد</h2>
         <ContainerCardsSidebar>
           <Sidebar />
           <Cards>
             <WeaponCard
-              innerImage={YemeniEnvironment}
-              title="البيئة اليمنية"
+              innerImage={YemeniMan}
+              title="الرجل اليمني"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
 
             <WeaponCard
-              innerImage={RamadanEnvironment}
-              title="البيئة الرمضانية"
+              innerImage={MoroccanMan}
+              title="الرجل المغربي"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
             <WeaponCard
-              innerImage={PalestinianEnvironment}
-              title="البيئة الفلسطينية"
+              innerImage={MoroccanGirl}
+              title="الفتاة المغربية"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
 
             <WeaponCard
-              innerImage={MoroccanEnvironment}
-              title="البيئة المغربية"
-              price="مجاناً"
-              software="Maya"
-              buttonText="عرض"
-            />
-            <WeaponCard
-              innerImage={BedouinEnvironment}
-              title="البيئة البدوية"
+              innerImage={YemeniGirl}
+              title="الفتاة اليمنية"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
@@ -107,6 +100,7 @@ function TwoDCharacters2() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
+      <Pagination />
     </div>
   );
 }

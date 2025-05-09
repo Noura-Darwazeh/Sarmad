@@ -27,10 +27,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Imagee = () => {
+const Imagee = ({ src, alt = "image" }) => {
   return (
     <Wrapper>
-      <img src={threeDWeapons} alt="3D Weapons" />
+      <img src={src} alt={alt} />
     </Wrapper>
   );
 };
