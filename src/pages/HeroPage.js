@@ -16,7 +16,7 @@ const HeroContainer = styled.div`
   background-image: url(${backgroundImage});
 
   @media (max-width: 426px) {
-    padding: 0 20px; 
+    padding: 0 20px;
   }
 `;
 
@@ -24,8 +24,8 @@ const HeroContent = styled.div`
   max-width: 900px;
 
   @media (max-width: 426px) {
-    max-width: 100%; 
-    text-align: center; 
+    max-width: 100%;
+    text-align: center;
   }
 `;
 
@@ -35,15 +35,15 @@ const Title = styled.h1`
   max-width: 300px;
 
   @media (max-width: 426px) {
-    font-size: 32px; 
+    font-size: 32px;
   }
 `;
 
 const Description = styled.p`
   font-size: 24px;
-  
+
   @media (max-width: 426px) {
-    font-size: 18px; 
+    font-size: 18px;
   }
 `;
 
@@ -55,10 +55,10 @@ const PrimaryButton = styled.button`
   border-radius: 8px;
   color: ${(props) => props.theme.colors.white};
   cursor: pointer;
-margin-top:69px;
+  margin-top: 69px;
   @media (max-width: 426px) {
     font-size: 18px;
-    padding: 6px 40px; 
+    padding: 6px 40px;
   }
 `;
 
@@ -66,7 +66,7 @@ const HeroButtons = styled.div`
   margin-top: 76px;
 
   @media (max-width: 426px) {
-    margin-top: 40px; 
+    margin-top: 40px;
   }
 `;
 
@@ -78,8 +78,8 @@ const VideoLink = styled.a`
   font-weight: 500;
 
   @media (max-width: 426px) {
-    flex-direction: column; 
-    text-align: center; 
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
@@ -87,7 +87,7 @@ const VideoText = styled.span`
   font-size: 24px;
 
   @media (max-width: 426px) {
-    font-size: 18px; 
+    font-size: 18px;
   }
 `;
 
@@ -97,16 +97,16 @@ const Line = styled.div`
   background-color: ${(props) => props.theme.colors.white};
 
   @media (max-width: 426px) {
-    width: 100px;  
+    width: 100px;
     margin: 10px 0;
   }
 `;
 
 export const HeroPage = () => {
-  const navigate = useNavigate();    
+  const navigate = useNavigate();
 
   const handleStartClick = () => {
-    navigate("/home"); 
+    navigate("/log-in");
   };
   return (
     <HeroContainer>

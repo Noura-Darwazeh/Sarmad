@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-
 import WeaponCard from "../components/Card";
 import Sidebar from "../components/AssetsGallerySidebar";
-import hammer from "../assets/threeDWeapons/hammer.png";
-import sword from "../assets/threeDWeapons/sword.png";
-import SwordOfZulfiqar from "../assets/threeDWeapons/swordOfZulfiqar.png";
-import dagger from "../assets/threeDWeapons/dagger.png";
-import ironMachine from "../assets/threeDWeapons/ironMachine.png";
+import RamadanMan from "../assets/twoDCharacters/RamadanMan.png";
+import PalestinianMan from "../assets/twoDCharacters/PalestinianMan.png";
+import BedouinMan from "../assets/twoDCharacters/BedouinMan.png";
+import BedouinGirl from "../assets/twoDCharacters/BedouinGirl.png";
+import RamadanGirl from "../assets/twoDCharacters/RamadanGirl.png";
+import PalestinianGirl from "../assets/twoDCharacters/PalestinianGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
-import Pagination from "../components/Pagination "
+import Pagination from "../components/Pagination ";
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -66,43 +66,51 @@ function TwoDCharacters1() {
       <Imagee />
 
       <PageContainer>
-        <h2>شخصيات ثنائية الابعاد</h2>
+        <h2>شخصيات ثنائية الأبعاد</h2>
         <ContainerCardsSidebar>
           <Sidebar />
           <Cards>
             <WeaponCard
-              innerImage={SwordOfZulfiqar}
-              title=" سيف ذو الفقار "
+              innerImage={BedouinMan}
+              title="الرجل البدوي"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
 
             <WeaponCard
-              innerImage={hammer}
-              title="مطرقة"
+              innerImage={RamadanMan}
+              title="الرجل الرمضاني"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
             <WeaponCard
-              innerImage={sword}
-              title="سيف"
+              innerImage={PalestinianMan}
+              title="الرجل الفلسطيني"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
 
             <WeaponCard
-              innerImage={dagger}
-              title="خنجر"
+              innerImage={BedouinGirl}
+              title="الفتاة البدوية"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
             />
             <WeaponCard
-              innerImage={ironMachine}
-              title="الة حديدية"
+              innerImage={RamadanGirl}
+              title="الفتاة الرمضانية"
+              price="مجاناً"
+              software="Maya"
+              buttonText="عرض"
+            />
+
+            <WeaponCard
+              innerImage={PalestinianGirl}
+              title="الفتاة الفلسطينية"
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
