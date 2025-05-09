@@ -6,3 +6,5 @@ export * from "./ImageUploader";
 export * from "./FavGrid";
 export * from "./StyledComponents";
 export * from "./ThreeDViewer";
+
+export * from "./stylesta/StylestaSidebar";

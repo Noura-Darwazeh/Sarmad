@@ -12,6 +12,7 @@ import {
   ThreeDCharacters2,
   TwoDWeapons1,
   TwoDWeapons2,
+  Stylesta,
 } from "./pages";
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
@@ -97,6 +98,10 @@ const routerConfig = createBrowserRouter([
   {
     path: "/two-d-characters2",
     element: <MainLayout PageToView={TwoDCharacters2} />,
+  },
+  {
+    path: "/stylesta",
+    element: <MainLayout PageToView={Stylesta} />,
   },
 ]);
 

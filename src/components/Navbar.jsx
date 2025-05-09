@@ -172,7 +172,7 @@ export const Navbar = () => {
         <a onClick={() => navigate("/two-d-characters1")}>ثنائي الأبعاد</a>
         <a href="#">الطابعات</a>
         <a onClick={() => navigate("/upload")}>حمل شغلك</a>
-        <a href="#">ستايليستنا</a>
+        <a onClick={() => navigate("/stylesta")}>ستايليستا</a>
         <a onClick={() => navigate("/about")}>من نحن</a>
       </NavMenu>
     </HeaderContainer>

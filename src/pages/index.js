@@ -11,3 +11,4 @@ export * from "./ThreeDCharacters1";
 export * from "./ThreeDCharacters2";
 export * from "./TwoDWeapons1";
 export * from "./TwoDWeapons2";
+export * from "./Stylesta";
