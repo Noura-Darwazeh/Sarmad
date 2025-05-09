@@ -50,6 +50,11 @@ import {
   FemaleShoes6Img,
   FemaleShoes7Img,
   FemaleShoes8Img,
+  MaleBodyImages,
+  MaleFaceImages,
+  MaleHairImages,
+  MaleClothesImages,
+  MaleShoesImages,
 } from "../assets";
 
 export const FemaleBody = {
@@ -146,28 +151,27 @@ export const AllFemaleData = [
 
 export const MaleBody = {
   title: "الجسم",
-  images: [],
+  images: MaleBodyImages,
 };
 
 export const MaleFace = {
   title: "الوجه",
-
-  images: [],
+  images: MaleFaceImages,
 };
 
 export const MaleHair = {
   title: "الشعر",
-  images: [],
+  images: MaleHairImages,
 };
 
 export const MaleClothes = {
   title: "الملابس",
-  images: [],
+  images: MaleClothesImages,
 };
 
 export const MaleShoes = {
   title: "الأحذية",
-  images: [],
+  images: MaleShoesImages,
 };
 
 export const AllMaleData = [

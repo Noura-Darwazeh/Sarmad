@@ -98,8 +98,55 @@ import FemaleShoes5 from "./Stylesta/Female/Shoes5.png";
 import FemaleShoes6 from "./Stylesta/Female/Shoes6.png";
 import FemaleShoes7 from "./Stylesta/Female/Shoes7.png";
 import FemaleShoes8 from "./Stylesta/Female/Shoes8.png";
+import MaleBody1 from "./Stylesta/Male/Body1.png";
+import MaleBody2 from "./Stylesta/Male/Body2.png";
+import MaleBody3 from "./Stylesta/Male/Body3.png";
+import MaleBody4 from "./Stylesta/Male/Body4.png";
+import MaleBody5 from "./Stylesta/Male/Body5.png";
+import MaleBody6 from "./Stylesta/Male/Body6.png";
+import MaleBody7 from "./Stylesta/Male/Body7.png";
+import MaleBody8 from "./Stylesta/Male/Body8.png";
+import MaleBody9 from "./Stylesta/Male/Body9.png";
+import MaleFace1 from "./Stylesta/Male/Face1.png";
+import MaleFace2 from "./Stylesta/Male/Face2.png";
+import MaleFace3 from "./Stylesta/Male/Face3.png";
+import MaleFace4 from "./Stylesta/Male/Face4.png";
+import MaleFace5 from "./Stylesta/Male/Face5.png";
+import MaleFace6 from "./Stylesta/Male/Face6.png";
+import MaleFace7 from "./Stylesta/Male/Face7.png";
+import MaleFace8 from "./Stylesta/Male/Face8.png";
+import MaleHair1 from "./Stylesta/Male/Hair1.png";
+import MaleHair2 from "./Stylesta/Male/Hair2.png";
+import MaleHair3 from "./Stylesta/Male/Hair3.png";
+import MaleHair4 from "./Stylesta/Male/Hair4.png";
+import MaleHair5 from "./Stylesta/Male/Hair5.png";
+import MaleHair6 from "./Stylesta/Male/Hair6.png";
+import MaleHair7 from "./Stylesta/Male/Hair7.png";
+import MaleHair8 from "./Stylesta/Male/Hair8.png";
+import MaleClothes1 from "./Stylesta/Male/Clothes1.png";
+import MaleClothes2 from "./Stylesta/Male/Clothes2.png";
+import MaleClothes3 from "./Stylesta/Male/Clothes3.png";
+import MaleClothes4 from "./Stylesta/Male/Clothes4.png";
+import MaleClothes5 from "./Stylesta/Male/Clothes5.png";
+import MaleClothes6 from "./Stylesta/Male/Clothes6.png";
+import MaleClothes7 from "./Stylesta/Male/Clothes7.png";
+import MaleClothes8 from "./Stylesta/Male/Clothes8.png";
+import MaleShoes1 from "./Stylesta/Male/Shoes1.png";
+import MaleShoes2 from "./Stylesta/Male/Shoes2.png";
+import MaleShoes3 from "./Stylesta/Male/Shoes3.png";
+import MaleShoes4 from "./Stylesta/Male/Shoes4.png";
+import MaleShoes5 from "./Stylesta/Male/Shoes5.png";
+import MaleShoes6 from "./Stylesta/Male/Shoes6.png";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
+export const MaleClothes1Img = MaleClothes1;
+export const MaleClothes2Img = MaleClothes2;
+export const MaleClothes3Img = MaleClothes3;
+export const MaleClothes4Img = MaleClothes4;
+export const MaleClothes5Img = MaleClothes5;
+export const MaleClothes6Img = MaleClothes6;
+export const MaleClothes7Img = MaleClothes7;
+export const MaleClothes8Img = MaleClothes8;
 export const MoreBackgroundImg = MoreBackground;
 export const CartItemFrameImg = CartItemFrame;
 export const xIconImg = xIcon;
@@ -199,3 +246,54 @@ export const FemaleShoes5Img = FemaleShoes5;
 export const FemaleShoes6Img = FemaleShoes6;
 export const FemaleShoes7Img = FemaleShoes7;
 export const FemaleShoes8Img = FemaleShoes8;
+
+// -------------------------------> Male Images
+export const MaleBodyImages = [
+  MaleBody1,
+  MaleBody2,
+  MaleBody3,
+  MaleBody4,
+  MaleBody5,
+  MaleBody6,
+  MaleBody7,
+  MaleBody8,
+  MaleBody9,
+];
+export const MaleFaceImages = [
+  MaleFace1,
+  MaleFace2,
+  MaleFace3,
+  MaleFace4,
+  MaleFace5,
+  MaleFace6,
+  MaleFace7,
+  MaleFace8,
+];
+export const MaleHairImages = [
+  MaleHair1,
+  MaleHair2,
+  MaleHair3,
+  MaleHair4,
+  MaleHair5,
+  MaleHair6,
+  MaleHair7,
+  MaleHair8,
+];
+export const MaleShoesImages = [
+  MaleShoes1,
+  MaleShoes2,
+  MaleShoes3,
+  MaleShoes4,
+  MaleShoes5,
+  MaleShoes6,
+];
+export const MaleClothesImages = [
+  MaleClothes1,
+  MaleClothes2,
+  MaleClothes3,
+  MaleClothes4,
+  MaleClothes5,
+  MaleClothes6,
+  MaleClothes7,
+  MaleClothes8,
+];
