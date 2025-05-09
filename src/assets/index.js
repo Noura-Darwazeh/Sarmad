@@ -44,6 +44,9 @@ import Group from "./AboutUsAssets/Group.png";
 import Leen from "./AboutUsAssets/Leen.png";
 import Rama from "./AboutUsAssets/Rama.png";
 import Leema from "./AboutUsAssets/Leema.png";
+import Weapon3D from "./3dModels/Weapon.fbx";
+import Environment3D from "./3dModels/Env.fbx";
+import Female3D from "./3dModels/Female-Jordan.fbx";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
 export const MoreBackgroundImg = MoreBackground;
@@ -91,3 +94,6 @@ export const GroupImg = Group;
 export const LeenImg = Leen;
 export const RamaImg = Rama;
 export const LeemaImg = Leema;
+export const Weapon3DModel = Weapon3D;
+export const Environment3DModel = Environment3D;
+export const Female3DModel = Female3D;

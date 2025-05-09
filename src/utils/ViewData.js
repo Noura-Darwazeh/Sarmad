@@ -14,12 +14,15 @@ import {
   EgyptionEnvironmentImg,
   EgyptionEnvironmentImg2,
   EgyptionEnvironmentImg3,
+  Environment3DModel,
+  Female3DModel,
   JoranianGirlImg,
   JoranianGirlImg2,
   JoranianGirlImg3,
   Sword1Img,
   Sword2Img,
   Sword3Img,
+  Weapon3DModel,
 } from "../assets";
 
 export const SwordData = {
@@ -41,7 +44,7 @@ export const SwordData = {
       alt: "Sword 3",
     },
   ],
-  mainImage: null,
+  mainImage: Weapon3DModel,
 };
 
 export const JoranianGirlData = {
@@ -63,7 +66,7 @@ export const JoranianGirlData = {
       alt: "JordanianGirl3",
     },
   ],
-  mainImage: null,
+  mainImage: Female3DModel,
 };
 
 export const EgyptionEnvironmentData = {
@@ -85,7 +88,7 @@ export const EgyptionEnvironmentData = {
       alt: "EgyptianEnvironment3",
     },
   ],
-  mainImage: null,
+  mainImage: Environment3DModel,
 };
 
 export const BedouinEnvironmentData = {

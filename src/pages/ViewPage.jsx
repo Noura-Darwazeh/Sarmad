@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GlassDiv, MadeByUs } from "../components";
+import { GlassDiv, MadeByUs, ThreeDViewer } from "../components";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 import { FavIcon, ImageIcon, RatingIcon } from "../assets";
@@ -17,6 +17,9 @@ export const ViewPage = () => {
     } else {
     }
   }, [id]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <MadeByUs />
@@ -73,7 +76,11 @@ export const ViewPage = () => {
           className="glass"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          {data?.mainImage && <MainImg src={data?.mainImage} alt="main" />}
+          {data?.mainImage && data?.mainImage.split(".").pop() === "png" ? (
+            <MainImg src={data?.mainImage} alt="main" />
+          ) : (
+            <ThreeDViewer model={data?.mainImage} />
+          )}
         </GlassDiv>
       </ElementContainer>
       <ImagesContainer>

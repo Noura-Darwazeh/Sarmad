@@ -10,6 +10,7 @@ import MoroccanEnvironment from "../assets/twoDEnvironment/MoroccanEnvironment.p
 import BedouinEnvironment from "../assets/twoDEnvironment/BedouinEnvironment.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
   padding-right: 75px;
@@ -57,13 +58,14 @@ const Cards = styled.div`
 `;
 
 function TwoDEnvironments() {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <MadeByUs />
       <Imagee />
 
       <PageContainer>
-        <h2>أسلحة ثنائية الأبعاد</h2>
+        <h2>بيئات ثنائية الأبعاد</h2>
         <ContainerCardsSidebar>
           <Sidebar />
           <Cards>
@@ -73,6 +75,7 @@ function TwoDEnvironments() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
+              onClick={() => navigate("/view?id=3")}
             />
 
             <WeaponCard
