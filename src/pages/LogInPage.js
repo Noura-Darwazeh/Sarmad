@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import googleIcon from "../assets/loginPage/google.png";
 import facebookIcon from "../assets/loginPage/facebook.png";
+import { useNavigate } from "react-router-dom";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -143,6 +144,10 @@ const SocialIcon = styled.img`
 `;
 
 export default function LogInPage() {
+  const navigate = useNavigate();
+  const handleStartClick = () => {
+    navigate("/home");
+  };
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -184,7 +189,9 @@ export default function LogInPage() {
             <Link href="#">هل نسيت كلمة المرور؟</Link>
           </ForgotPassword>
 
-          <LoginButton type="submit">تسجيل الدخول</LoginButton>
+          <LoginButton type="submit" onClick={handleStartClick}>
+            تسجيل الدخول
+          </LoginButton>
 
           <Divider>
             <DividerSpan>أو سجل الدخول باستخدام :</DividerSpan>
