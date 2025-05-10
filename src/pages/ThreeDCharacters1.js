@@ -11,7 +11,7 @@ import WarriorGirl from "../assets/threeDCharacters/WarriorGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
 import Pagination from "../components/Pagination ";
-import ThreeDCharactersImage1 from "../assets/threeDCharacters/ThreeDCharacters1.png"
+import ThreeDCharactersImage1 from "../assets/threeDCharacters/ThreeDCharacters1.png";
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -121,9 +121,7 @@ export function ThreeDCharacters1() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
-      <Pagination />
+      <Pagination pages={["three-d-characters1", "three-d-characters2"]} />
     </div>
   );
 }
-
-// export default ThreeDCharacters1;

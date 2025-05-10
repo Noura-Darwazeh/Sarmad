@@ -11,7 +11,7 @@ import PalestinianGirl from "../assets/twoDCharacters/PalestinianGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
 import Pagination from "../components/Pagination ";
-import twoDCharacters from "../assets/twoDCharacters/twoDCharacters.png"
+import twoDCharacters from "../assets/twoDCharacters/twoDCharacters.png";
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -78,7 +78,6 @@ function TwoDCharacters1() {
               software="Maya"
               buttonText="عرض"
               onClick={() => navigate("/view?id=5")}
-
             />
 
             <WeaponCard
@@ -121,7 +120,7 @@ function TwoDCharacters1() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
-      <Pagination />
+      <Pagination pages={["two-d-characters1", "two-d-characters2"]} />
     </div>
   );
 }

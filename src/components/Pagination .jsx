@@ -1,50 +1,44 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const PaginationContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 100px;
-  direction: rtl;
-`;
+const Pagination = ({ pages }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
 
-const PageButton = styled.button`
-  width: 50px;
-  height: 50px;
-  background-color: #9474d9; // بنفسجي فاتح
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+  const currentPath = location.pathname;
+  const currentIndex = pages.findIndex((path) => currentPath.includes(path));
 
-  ${({ active }) =>
-    active &&
-    `
-    background-color: #7c3aed;
-  `}
-`;
-
-const Pagination = ({ setPage }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 2;
+  const handleClick = (index) => {
+    navigate(`/${pages[index]}`);
+  };
 
   return (
-    <PaginationContainer>
-      {Array.from({ length: totalPages }, (_, i) => (
-        <PageButton
-          key={i + 1}
-          active={currentPage === i + 1}
-          onClick={() => {
-            setCurrentPage(i + 1);
-            setPage && setPage(i + 1);
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        justifyContent: "center",
+        marginTop: "30px",
+      }}
+    >
+      {pages.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => handleClick(index)}
+          style={{
+            width: "50px",
+            height: "50px",
+            backgroundColor: "#9474d9",
+            color: "white",
+            border: "none",
+            fontSize: "16px",
+            cursor: "pointer",
           }}
         >
-          {i + 1}
-        </PageButton>
+          {index + 1}
+        </button>
       ))}
-    </PaginationContainer>
+    </div>
   );
 };
 
