@@ -57,9 +57,10 @@ export const ViewPage = () => {
             <button
               style={{ width: "148px", height: "51px" }}
               onClick={() => {
+                if (!data?.fileToDownload) return;
                 const link = document.createElement("a");
-                link.href = data?.mainImage;
-                const extension = data?.mainImage.split(".").pop();
+                link.href = data?.fileToDownload;
+                const extension = data?.fileToDownload.split(".").pop();
                 link.download = (data?.title || "image") + "." + extension;
                 document.body.appendChild(link);
                 link.click();

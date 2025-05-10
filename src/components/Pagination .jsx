@@ -1,12 +1,7 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Pagination = ({ pages }) => {
-  const location = useLocation();
+const Pagination = ({ pages, setPage }) => {
   const navigate = useNavigate();
-
-  const currentPath = location.pathname;
-  const currentIndex = pages.findIndex((path) => currentPath.includes(path));
 
   const handleClick = (index) => {
     navigate(`/${pages[index]}`);
@@ -24,7 +19,7 @@ const Pagination = ({ pages }) => {
       {pages.map((_, index) => (
         <button
           key={index}
-          onClick={() => handleClick(index)}
+          onClick={() => (setPage ? setPage(index + 1) : handleClick(index))}
           style={{
             width: "50px",
             height: "50px",

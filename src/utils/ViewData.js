@@ -23,6 +23,9 @@ import {
   Sword2Img,
   Sword3Img,
   Weapon3DModel,
+  BedouinEnvironmentModelImg,
+  DaggerModelImg,
+  MaleModelImg,
 } from "../assets";
 
 export const SwordData = {
@@ -45,6 +48,7 @@ export const SwordData = {
     },
   ],
   mainImage: Weapon3DModel,
+  fileToDownload: Weapon3DModel,
 };
 
 export const JoranianGirlData = {
@@ -67,6 +71,7 @@ export const JoranianGirlData = {
     },
   ],
   mainImage: Female3DModel,
+  fileToDownload: Female3DModel,
 };
 
 export const EgyptionEnvironmentData = {
@@ -89,6 +94,7 @@ export const EgyptionEnvironmentData = {
     },
   ],
   mainImage: Environment3DModel,
+  fileToDownload: Environment3DModel,
 };
 
 export const BedouinEnvironmentData = {
@@ -111,6 +117,7 @@ export const BedouinEnvironmentData = {
     },
   ],
   mainImage: BedouinEnvironmentMainImg,
+  fileToDownload: BedouinEnvironmentModelImg,
 };
 
 export const DaggerData = {
@@ -133,6 +140,7 @@ export const DaggerData = {
     },
   ],
   mainImage: DaggerMainImg,
+  fileToDownload: DaggerModelImg,
 };
 
 export const BedouinManData = {
@@ -155,6 +163,7 @@ export const BedouinManData = {
     },
   ],
   mainImage: BedouinManMainImg,
+  fileToDownload: MaleModelImg,
 };
 
 export const AllData = [

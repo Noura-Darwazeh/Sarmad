@@ -137,6 +137,10 @@ import MaleShoes3 from "./Stylesta/Male/Shoes3.png";
 import MaleShoes4 from "./Stylesta/Male/Shoes4.png";
 import MaleShoes5 from "./Stylesta/Male/Shoes5.png";
 import MaleShoes6 from "./Stylesta/Male/Shoes6.png";
+// 2d models
+import BedouinEnvironmentModel from "./2dModels/Bado_Environment.ai";
+import DaggerModel from "./2dModels/KhanjarAthari.ai";
+import MaleModel from "./2dModels/BadoMale_Character_Final.ai";
 
 export const MonthGTitleBGImg = MonthGTitleBG;
 export const MaleClothes1Img = MaleClothes1;
@@ -297,3 +301,7 @@ export const MaleClothesImages = [
   MaleClothes7,
   MaleClothes8,
 ];
+
+export const BedouinEnvironmentModelImg = BedouinEnvironmentModel;
+export const DaggerModelImg = DaggerModel;
+export const MaleModelImg = MaleModel;

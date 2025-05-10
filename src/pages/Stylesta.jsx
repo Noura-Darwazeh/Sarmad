@@ -69,7 +69,7 @@ export const Stylesta = () => {
               )}
             </Cards>
             {AllFemaleData[selectedSection]?.images.length > 9 && (
-              <Pagination setPage={setPage} />
+              <Pagination setPage={setPage} pages={[1, 2]} />
             )}
           </ShowcaseContainer>
         </ContainerCardsSidebar>

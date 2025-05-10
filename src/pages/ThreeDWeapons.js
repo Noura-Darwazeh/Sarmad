@@ -9,7 +9,7 @@ import dagger from "../assets/threeDWeapons/dagger.png";
 import ironMachine from "../assets/threeDWeapons/ironMachine.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
-import threeDweaponsImage from '../assets/threeDWeapons/ThreeDweapons.png'
+import threeDweaponsImage from '../assets/threeDWeapons/threeDWeapons.png'
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
