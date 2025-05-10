@@ -9,6 +9,7 @@ import EgyptianMan from "../assets/threeDCharacters/EgyptianMan.png";
 import EgyptianGirl from "../assets/threeDCharacters/EgyptianGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import ThreeDCharactersImage2 from "../assets/threeDCharacters/ThreeDCharacters1.png"
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -61,7 +62,7 @@ export function ThreeDCharacters2() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={ThreeDCharactersImage2} />
 
       <PageContainer>
         <h2>بيئات ثلاثية الأبعاد</h2>

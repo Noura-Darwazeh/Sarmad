@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
 import AssetsCard from "../components/Card";
-import Sidebar from "../components/AssetsGallerySidebar";
+import Sidebar from "../components/AssetsGallerySidebar2";
 import stick from "../assets/twoDWeapons/stick.png";
 import knife from "../assets/twoDWeapons/knife.png";
 import ax from "../assets/twoDWeapons/ax.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import twoDWeaponsImage from "../assets/twoDWeapons/twoDWeapons.png";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../components/Pagination ";
 
@@ -61,7 +61,7 @@ export function TwoDWeapons2() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={twoDWeaponsImage} />
 
       <PageContainer>
         <h2>أسلحة ثنائية الأبعاد</h2>
@@ -98,5 +98,3 @@ export function TwoDWeapons2() {
     </div>
   );
 }
-
-

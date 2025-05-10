@@ -10,6 +10,8 @@ import SyrianGirl from "../assets/threeDCharacters/SyrianGirl.png";
 import WarriorGirl from "../assets/threeDCharacters/WarriorGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import Pagination from "../components/Pagination ";
+import ThreeDCharactersImage1 from "../assets/threeDCharacters/ThreeDCharacters1.png"
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -62,7 +64,7 @@ export function ThreeDCharacters1() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={ThreeDCharactersImage1} />
 
       <PageContainer>
         <h2>شخصيات ثلاثية الأبعاد</h2>
@@ -119,6 +121,7 @@ export function ThreeDCharacters1() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
+      <Pagination />
     </div>
   );
 }

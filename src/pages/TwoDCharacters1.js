@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WeaponCard from "../components/Card";
-import Sidebar from "../components/AssetsGallerySidebar";
+import Sidebar from "../components/AssetsGallerySidebar2";
 import RamadanMan from "../assets/twoDCharacters/RamadanMan.png";
 import PalestinianMan from "../assets/twoDCharacters/PalestinianMan.png";
 import BedouinMan from "../assets/twoDCharacters/BedouinMan.png";
@@ -11,6 +11,7 @@ import PalestinianGirl from "../assets/twoDCharacters/PalestinianGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
 import Pagination from "../components/Pagination ";
+import twoDCharacters from "../assets/twoDCharacters/twoDCharacters.png"
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -63,7 +64,7 @@ function TwoDCharacters1() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={twoDCharacters} />
 
       <PageContainer>
         <h2>شخصيات ثنائية الأبعاد</h2>

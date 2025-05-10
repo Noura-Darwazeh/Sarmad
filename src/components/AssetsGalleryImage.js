@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import threeDWeapons from "../assets/threeDWeapons/threeDWeapons.png";
 
 const Wrapper = styled.div`
   display: flex;

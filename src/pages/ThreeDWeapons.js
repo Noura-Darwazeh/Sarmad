@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import WeaponCard from "../components/Card";
 import Sidebar from "../components/AssetsGallerySidebar";
 import hammer from "../assets/threeDWeapons/hammer.png";
@@ -10,6 +9,7 @@ import dagger from "../assets/threeDWeapons/dagger.png";
 import ironMachine from "../assets/threeDWeapons/ironMachine.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import threeDweaponsImage from '../assets/threeDWeapons/ThreeDweapons.png'
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -62,7 +62,7 @@ function ThreeDWeapons() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={threeDweaponsImage} />
 
       <PageContainer>
         <h2>أسلحة ثلاثية الأبعاد</h2>
