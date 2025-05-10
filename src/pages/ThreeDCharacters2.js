@@ -9,9 +9,9 @@ import EgyptianMan from "../assets/threeDCharacters/EgyptianMan.png";
 import EgyptianGirl from "../assets/threeDCharacters/EgyptianGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
-import ThreeDCharactersImage2 from "../assets/threeDCharacters/ThreeDCharacters1.png"
+import ThreeDCharactersImage2 from "../assets/threeDCharacters/ThreeDCharacters1.png";
 import { useNavigate } from "react-router-dom";
-
+import Pagination from "../components/Pagination ";
 const PageContainer = styled.div`
   padding-right: 75px;
   margin-top: 50px;
@@ -102,6 +102,7 @@ export function ThreeDCharacters2() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
+      <Pagination pages={["three-d-characters1", "three-d-characters2"]} />
     </div>
   );
 }

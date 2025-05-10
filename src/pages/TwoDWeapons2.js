@@ -94,7 +94,7 @@ export function TwoDWeapons2() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
-      <Pagination />
+      <Pagination pages={["two-d-weapons1", "two-d-weapons2"]} />
     </div>
   );
 }

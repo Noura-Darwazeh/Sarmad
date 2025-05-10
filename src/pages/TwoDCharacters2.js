@@ -9,7 +9,7 @@ import YemeniMan from "../assets/twoDCharacters/YemeniMan.png";
 import YemeniGirl from "../assets/twoDCharacters/YemeniGirl.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
-import twoDCharacters from "../assets/twoDCharacters/twoDCharacters.png"
+import twoDCharacters from "../assets/twoDCharacters/twoDCharacters.png";
 import Pagination from "../components/Pagination ";
 
 const PageContainer = styled.div`
@@ -101,7 +101,7 @@ function TwoDCharacters2() {
           </Cards>
         </ContainerCardsSidebar>
       </PageContainer>
-      <Pagination />
+      <Pagination pages={["two-d-characters1", "two-d-characters2"]} />
     </div>
   );
 }
