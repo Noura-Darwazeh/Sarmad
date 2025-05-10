@@ -10,6 +10,7 @@ import JordanianEnvironment from "../assets/threeDEnvironment/JordanianEnvironme
 import WarEnvironment from "../assets/threeDEnvironment/WarEnvironment.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import ThreeDEnvironmentsImage from "../assets/threeDEnvironment/ThreeDEnvironments.png"
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -62,7 +63,7 @@ function ThreeDEnvironments() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={ThreeDEnvironmentsImage} />
 
       <PageContainer>
         <h2>بيئات ثلاثية الأبعاد</h2>

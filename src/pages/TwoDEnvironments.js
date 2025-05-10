@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WeaponCard from "../components/Card";
-import Sidebar from "../components/AssetsGallerySidebar";
+import Sidebar from "../components/AssetsGallerySidebar2";
 import RamadanEnvironment from "../assets/twoDEnvironment/RamadanEnvironment.png";
 import PalestinianEnvironment from "../assets/twoDEnvironment/PalestinianEnvironment.png";
 import YemeniEnvironment from "../assets/twoDEnvironment/YemeniEnvironment.png";
@@ -9,6 +9,7 @@ import MoroccanEnvironment from "../assets/twoDEnvironment/MoroccanEnvironment.p
 import BedouinEnvironment from "../assets/twoDEnvironment/BedouinEnvironment.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
+import twoDEnvironmentImage from "../assets/twoDEnvironment/twoDEnvironment.png";
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -61,7 +62,7 @@ function TwoDEnvironments() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee />
+      <Imagee src={twoDEnvironmentImage} />
 
       <PageContainer>
         <h2>بيئات ثنائية الأبعاد</h2>

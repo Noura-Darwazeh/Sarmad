@@ -89,23 +89,23 @@ const FilterBox = () => {
   return (
     <FilterContainer>
       <Section>
-        <SectionTitle>الأصول ثلاثية الأبعاد</SectionTitle>
+        <SectionTitle>الأصول ثنائية الأبعاد</SectionTitle>
         <CheckboxWithImage
           label="الشخصيات"
-          path="/three-d-characters1"
-          checked={selectedPath === "/three-d-characters1"}
+          path="/two-d-characters1"
+          checked={selectedPath === "/two-d-characters1"}
           onChange={handleCheckboxChange}
         />
         <CheckboxWithImage
           label="البيئات"
-          path="/three-d-environments"
-          checked={selectedPath === "/three-d-environments"}
+          path="/two-d-environments"
+          checked={selectedPath === "/two-d-environments"}
           onChange={handleCheckboxChange}
         />
         <CheckboxWithImage
           label="الأسلحة"
-          path="/three-d-weapons"
-          checked={selectedPath === "/three-d-weapons"}
+          path="/two-d-weapons1"
+          checked={selectedPath === "/two-d-weapons1"}
           onChange={handleCheckboxChange}
         />
       </Section>

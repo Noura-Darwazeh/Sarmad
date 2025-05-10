@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AssetsCard from "../components/Card";
-import Sidebar from "../components/AssetsGallerySidebar";
+import Sidebar from "../components/AssetsGallerySidebar2";
 import sword from "../assets/twoDWeapons/sword2.png";
 import gun from "../assets/twoDWeapons/gun.png";
 import dagger from "../assets/twoDWeapons/dagger.png";
@@ -10,8 +10,8 @@ import antiqueDagger from "../assets/twoDWeapons/antiqueDagger.png";
 import combTheGround from "../assets/twoDWeapons/combTheGround.png";
 import { MadeByUs } from "../components/MadeByUs";
 import Imagee from "../components/AssetsGalleryImage";
-import twoDWeapons from "../assets/twoDWeapons/twoDWeapons.png";
 import Pagination from "../components/Pagination ";
+import twoDWeaponsImage from "../assets/twoDWeapons/twoDWeapons.png";
 import { useNavigate } from "react-router-dom";
 
 const PageContainer = styled.div`
@@ -64,7 +64,7 @@ export function TwoDWeapons1() {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee src={twoDWeapons} />
+      <Imagee src={twoDWeaponsImage} />
 
       <PageContainer>
         <h2>أسلحة ثنائية الأبعاد</h2>
@@ -102,7 +102,6 @@ export function TwoDWeapons1() {
               software="Maya"
               buttonText="عرض"
               onClick={() => navigate("/view?id=4")}
-
             />
             <AssetsCard
               innerImage={combTheGround}
