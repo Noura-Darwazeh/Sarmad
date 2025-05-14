@@ -32,7 +32,9 @@ export const Stylesta = () => {
   return (
     <div className="container">
       <MadeByUs />
-      <Imagee src={Cover} />
+      <a href="https://drive.google.com/drive/folders/11u8DVv-seCmv2MnnZNWsADNyJ9gubOb-?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <Imagee src={Cover} />
+      </a>
       <PageContainer>
         <h2>ستايليستا</h2>
         <ContainerCardsSidebar>
@@ -51,9 +53,9 @@ export const Stylesta = () => {
                       imageToDownload={
                         index === 0
                           ? (selectedSection < 10
-                              ? AllFemaleData[selectedSection]
-                              : AllMaleData[selectedSection - 10]
-                            ).model
+                            ? AllFemaleData[selectedSection]
+                            : AllMaleData[selectedSection - 10]
+                          ).model
                           : item
                       }
                       name={

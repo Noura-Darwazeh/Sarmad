@@ -77,7 +77,7 @@ export function ThreeDCharacters1() {
               price="مجاناً"
               software="Maya"
               buttonText="عرض"
-              onClick={() => navigate("/view?id=2")}
+              
             />
 
             <AssetsCard
